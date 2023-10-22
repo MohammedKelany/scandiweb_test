@@ -1,9 +1,8 @@
+<?php include_once(__DIR__ . '/../vendor/autoload.php'); ?>
+<?php include_once(__DIR__ . '/../private/db_initialize.php'); ?>
 <?php
 
 use App\classes\Product;
-
-include_once(__DIR__ . '/../vendor/autoload.php');
-include_once(__DIR__ . '/../private/db_initialize.php');
 
 // Extracting all Products from Database
 $products = Product::selectAll();

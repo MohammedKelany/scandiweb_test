@@ -1,12 +1,11 @@
+<?php include_once(__DIR__ . '/../vendor/autoload.php'); ?>
+<?php include(__DIR__ . '/../private/db_initialize.php'); ?>
+<?php include(__DIR__ . '/../private/helper_functions.php'); ?>
 <?php
 
 use App\classes\Book;
 use App\classes\DVD;
 use App\classes\Furniture;
-
-include_once(__DIR__ . '/../vendor/autoload.php');
-include_once(__DIR__ . '/../private/db_initialize.php');
-include(__DIR__ . '/../private/helper_functions.php');
 
 $errors = validateInputs();
 
