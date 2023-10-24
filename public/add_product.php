@@ -57,46 +57,46 @@ if (isset($_POST["submit"]) && empty($errors)) {
                 <form action="add_product.php" method="post" id="product_form">
                     <div class="form-unit">
                         <label for="sku">SKU: </label>
-                        <input type="text" name="sku">
+                        <input type="text" name="sku" id="sku">
                     </div>
                     <div class="form-unit">
                         <label for="name">Name: </label>
-                        <input type="text" name="name">
+                        <input type="text" name="name" id="name">
                     </div>
                     <div class="form-unit">
                         <label for="price">Price: </label>
-                        <input type="number" name="price">
+                        <input type="number" name="price" id="price">
                     </div>
                     <div class="type-switcher">
                         <label for="productType">Product Type</label>
                         <select name="typeSwitcher" id="productType">
                             <option value="" selected>Type Switcher</option>
                             <option value="dvd" id="DVD">DVD</option>
-                            <option value="book" id="Book">BOOK</option>
-                            <option value="furniture" id="Furniture">FURNITURE</option>
+                            <option value="book" id="Book">Book</option>
+                            <option value="furniture" id="Furniture">Furniture</option>
                         </select>
                     </div>
                     <div id="type-container">
                         <div class="form-unit" id="weight-container">
                             <label for="weight_kg">Weight: </label>
-                            <input type="number" name="weight_kg">
+                            <input type="number" name="weight_kg" id="weight">
                         </div>
                         <div class="form-unit" id="size-container">
                             <label for="size">Size: </label>
-                            <input type="number" name="size">
+                            <input type="number" name="size" id="size">
                         </div>
                         <div id="dimenstions-container">
                             <div class="form-unit" id="height-container">
                                 <label for="height">Height: </label>
-                                <input type="number" name="height">
+                                <input type="number" name="height" id="height">
                             </div>
                             <div class="form-unit" id="width-container">
                                 <label for="width">Width: </label>
-                                <input type="number" name="width">
+                                <input type="number" name="width" id="width">
                             </div>
                             <div class="form-unit" id="length-container">
                                 <label for="length">Length: </label>
-                                <input type="number" name="length">
+                                <input type="number" name="length" id="length">
                             </div>
                         </div>
                     </div>
